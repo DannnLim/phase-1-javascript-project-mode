@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "howler": "^2.2.3",
+    "pretty-checkbox": "^3.0.3",
+    "tone": "^14.8.40"
+  },
+  "name": "phase-1-javascript-project-mode2",
+  "description": "## Learning Goals",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server",
+    "open": "http-server public -a localhost -p 1234 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DannnLim/phase-1-javascript-project-mode.git"
+  },
+  "keywords": [],
+  "author": "Danny Lim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DannnLim/phase-1-javascript-project-mode/issues"
+  },
+  "homepage": "https://github.com/DannnLim/phase-1-javascript-project-mode#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.2",
+    "http-server": "^14.1.1"
+  }
+}
