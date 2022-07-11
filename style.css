@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(81, 80, 80);
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* flex-direction: row; */
+    /* text-align: center; */
+    /* margin: auto; */
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+#tempo {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.name {
+    width: 20%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    font-family: 'Roboto Slab', serif;
+    border: 10px solid gray;
+    /* border-radius: 20px; */
+    border-bottom-left-radius: 20px;
+
+    font-size: 30px;
+}
+
+
+
+#home {
+    display: grid;
+    /* grid-template-columns: repeat(10, 1fr); */
+    width: 1600px;
+    height: 700px;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: 50px;
+    /* padding-left: 8%; */
+    /* background-color: black; */
+}
+
+.drum {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+
+
+
+.Pad {
+
+    /* margin-right: 500px; */
+    /* margin: 1px; */
+    width: 80px;
+    height: 100px;
+    /* background-color: rgb(28, 27, 27); */
+    /* border: 1px solid blue; */
+    /* border-radius: 10px; */
+}
+
+
+
+
+/* .Kick {
+     width: 80px;
+     height: 100px;
+     background-color: rgb(28, 27, 27);
+     border: 1px solid gray;
+     border-radius: 10px;
+
+ } */
+
+/* .Pad:nth-child(8n+ 6),
+ .Pad:nth-child(9n +7),
+ .Pad:nth-child(8n +9),
+ .Pad:nth-child(8n +8),
+ .Pad:nth-child(9n +6) {
+     background-color: rgba(225, 100, 0, 0.6);
+
+ }
+
+ .Pad:hover {
+     background-color: rgba(225, 205, 5, 1);
+ }
+
+ .Pad:active {
+     color: yellow;
+ }
+
+ .slider {
+     width: 130%;
+ } */
+
+.drum {
+    position: relative;
+    /* width: 204px; */
+    /* max-width: 204px; */
+    /* height: 82px; */
+    /* max-height: 82px; */
+    /* padding: 24px; */
+    background: #fff;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    box-sizing: border-box;
+    color: black;
+    list-style: none;
+    border: 2px solid black;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Machine</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="/style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=PT+Sans+Narrow:wght@700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
+</head>
+
+<body>
+    <h1 id="title">Drum Machine</h1>
+    <div class="buttons">
+        <div id="tempo">
+            <h2 id="tempo">Tempo</h2>
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+
+
+    </div>
+    <div id="home">
+        <div id="Mpk">
+            <section class="drum RideCym">
+                <h1 class="name">Ride Cymbal</h1>
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+
+            </section>
+            <section class="drum OpenHH">
+                <h1 class="name">Open HH</h1>
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <input type="checkbox" class="Pad OpenHH">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </section>
+            <section class="drum ClosedHH">
+                <h1 class="name">Closed HH</h1>
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <input type="checkbox" class="Pad ClosedHH">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </section>
+            <section class="drum Snare">
+                <h1 class="name">Snare</h1>
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <input type="checkbox" class="Pad Snare">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </section>
+            <section class="drum Kick">
+                <h1 class="name">Kick Drum</h1>
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <input type="checkbox" class="Pad">
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </section>
+        </div>
+
+        <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.40/Tone.min.js"></script>
+        <script type="module" src="index.js"></script>
+
+</body>
+
+</html>
