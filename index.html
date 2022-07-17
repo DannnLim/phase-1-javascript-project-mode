@@ -1,153 +1,68 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drum Machine</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
-<link rel="stylesheet" href="/style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=PT+Sans+Narrow:wght@700&family=Roboto+Slab&display=swap"
-    rel="stylesheet">
-<link rel="shortcut icon" href="#">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800&family=Roboto:ital,wght@0,700;1,500;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="#">
+    <!-- <script src="/script.js" defer></script> -->
 </head>
 
 <body>
-    <h1 id="title">Drum Machine</h1>
-    <div class="buttons">
-        <div id="tempo">
-            <h2 id="tempo">Tempo</h2>
-            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        </div>
+    <h1 id="title">Piano</h1>
+    <div id="notes"></div>
+
+
+
+    <div class="piano">
+        <div data-sound="C" class="key White"></div>
+        <div data-sound="C#/Db" class="key Black"></div>
+        <div data-sound="D" class="key White"></div>
+        <div data-sound="D#/Eb" class="key Black"></div>
+        <div data-sound="E" class="key White"></div>
+        <div data-sound="F" class="key White"></div>
+        <div data-sound="F#/Gb" class="key Black"></div>
+        <div data-sound="G" class="key White"></div>
+        <div data-sound="G#/Ab" class="key Black"></div>
+        <div data-sound="A" class="key White"></div>
+        <div data-sound="A#/Bb" class="key Black"></div>
+        <div data-sound="B" class="key White"></div>
+        <div data-sound="C2" class="key White"></div>
 
 
     </div>
-    <div id="home">
-        <div id="Mpk">
-            <section class="drum RideCym">
-                <h1 class="name">Ride Cymbal</h1>
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
+    <div id="noteNames">
+        <audio id="C" src="Piano-Samples/Cmaj.wav"></audio>
+        <audio id="C#/Db" src="Piano-Samples/Db.wav"></audio>
+        <audio id="D" src="Piano-Samples/Dmaj.wav"></audio>
+        <audio id="D#/Eb" src="Piano-Samples/Eb.wav"></audio>
+        <audio id="E" src="Piano-Samples/Emaj.wav"></audio>
+        <audio id="F" src="Piano-Samples/Fmaj.wav"></audio>
+        <audio id="F#/Gb" src="Piano-Samples/Gb.wav"></audio>
+        <audio id="G" src="Piano-Samples/Gmaj.wav"></audio>
+        <audio id="G#/Ab" src="Piano-Samples/Ab.wav"></audio>
+        <audio id="A" src="Piano-Samples/Amaj.wav"></audio>
+        <audio id="B" src="Piano-Samples/Bmaj.wav"></audio>
+        <audio id="A#/Bb" src="Piano-Samples/Bb.wav"></audio>
+        <audio id="C2" src="Piano-Samples/Cmaj2.wav"></audio>
+    </div>
+    <span id="Like"><a class="Like-Unlike" href="">Like</a></span>
 
-            </section>
-            <section class="drum OpenHH">
-                <h1 class="name">Open HH</h1>
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <input type="checkbox" class="Pad OpenHH">
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </section>
-            <section class="drum ClosedHH">
-                <h1 class="name">Closed HH</h1>
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <input type="checkbox" class="Pad ClosedHH">
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </section>
-            <section class="drum Snare">
-                <h1 class="name">Snare</h1>
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <input type="checkbox" class="Pad Snare">
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </section>
-            <section class="drum Kick">
-                <h1 class="name">Kick Drum</h1>
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <input type="checkbox" class="Pad">
-                <div class="slidecontainer">
-                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                </div>
-            </section>
-        </div>
-
-        <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.40/Tone.min.js"></script>
-        <script type="module" src="index.js"></script>
-
+    <div id="guide">
+        <h1> Use keyboard to play</h1>
+        <p id="whiteNotes"><span class="keyboard"> A S D F G H J K </span> for white notes</p>
+        <p><span class="keyboard"> W E Y U I </span> for black notes</p>
+    </div>
+    <script type="module" src="/jquery.min.js"></script>
+    <script type="module" src="/howler.min.js"></script>
+    <script type="module" src="/script.js"></script>
 </body>
 
 </html>
