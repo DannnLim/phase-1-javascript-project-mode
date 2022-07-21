@@ -13,7 +13,16 @@
       "postId": 1
     }
   ],
-  "profile": {
-    "name": "Danny"
+  "SongNotation": {
+    "HappyBirthday": "A A S A F D, A A S A G F, A A K H F D S, I I H F G F ",
+    "TwinkleTwinkle": "A A G G H H G, F F D D S S A",
+    "MaryHadALittleLamb": "D S A S DDD, SSS, DDD, D S A S D GG, D S A S D SS D S A",
+    "Chords": {
+      "Chords": "Chords are a trid or more notes played together, Here are some basic chords",
+      "CMajorChord": "A S D (C D E on piano) - Play this together to form a Cmajor Chord",
+      "CMinorChord": "A E G (C D# G on piano) - Play this together to form a Cminor Chord",
+      "C#MajorChord": "E F U (C# F G# on piano) - This forms a C#major Chord",
+      "C#MinorChors": "W D U (C# E G# on piano) - This forms a C#minor Chord"
+    }
   }
 }

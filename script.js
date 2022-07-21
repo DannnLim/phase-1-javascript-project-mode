@@ -1,6 +1,7 @@
+
+
 const WhiteKeys = ["a", 's', 'd', 'f', 'g', 'h', 'j', 'k']
 const BlackKeys = ['w', 'e', 'y', 'u', 'i']
-// const notes = ['C', 'C#/Db', 'D', 'D#/Eb', 'E,', 'F', 'F#/Gb', 'G,', 'G#/Ab', 'A', 'A#/Bb', 'B', 'C2']
 
 const keys = document.querySelectorAll('.key')
 const White_Keys = document.querySelectorAll('.key.White')
@@ -33,6 +34,21 @@ function playNote(key) {
     })
 
 }
+document.body.addEventListener('click', (event) => {
+    const button = event.target.closest('.button');
+
+    if (!button) return;
+
+    const container = button.closest('.likes');
+
+    if (!container) return;
+
+    const counter = container.querySelector('.counter');
+
+    if (!counter) return;
+
+    counter.innerText = Number(counter.innerText) + 1;
+});
 
 
 $(".Like-Unlike").click(function (e) {
@@ -42,11 +58,72 @@ $(".Like-Unlike").click(function (e) {
     else {
         $(this).html('Like');
     }
-    
+
     return false;
-    
-    
+
+
 });
+
+
+// $(document).ready(function () {
+//     $.getJSON("db.json",
+//         function (data) {
+//             var Songs = ' ';
+
+//             $.each(data, function (key, value) {
+
+//                 Songs += '<tr>';
+
+//                 Songs += '<td>' +
+//                     value.HappyBirthday + '</td>';
+
+//                 // Songs += '<td>' +
+//                 //     value.TwinkleTwinkle + '<td>'
+
+//                 Songs += '</tr>';
+//             });
+//             $('#Notation').append(Songs);
+//         });
+// });
+
+
+
+// fetch('db.json')
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data.SongNotation)
+//         document.querySelector('#Notation').innerText = JSON.stringify(data)
+//     })
+
+
+const btn = document.querySelector('#btn');
+const output = document.querySelector('#Notation');
+const url = 'db.json';
+btn.onclick = () => {
+    // output.innerHTML = 'conecting....';
+    getData();
+
+}
+
+function getData() {
+    fetch(url)
+        .then(rep => rep.json())
+        .then(data => {
+            console.log(data.SongNotation);
+        })
+}
+
+function outData(val) {
+    console.log(val);
+    let html = ' ';
+    val.forEach((ele, ind) => {
+        console.log(ele);
+        html += `<div></div>`;
+    })
+
+    output.innerHTML = html;
+
+}
 
 
 

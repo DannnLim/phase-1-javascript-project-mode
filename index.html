@@ -18,7 +18,17 @@
 <body>
     <h1 id="title">Piano</h1>
     <div id="notes"></div>
+    <div id="Notation">
+        <button id="btn">Click Me</button>
+    </div>
 
+    <!-- <table id="Notation">
+        <tr id="Table">
+            <th> </th>
+            <th></th>
+            <th></th>
+        </tr>
+        </table> -->
 
 
     <div class="piano">
@@ -53,16 +63,23 @@
         <audio id="A#/Bb" src="Piano-Samples/Bb.wav"></audio>
         <audio id="C2" src="Piano-Samples/Cmaj2.wav"></audio>
     </div>
-    <span id="Like"><a class="Like-Unlike" href="">Like</a></span>
+    <!-- <button class="likes" id="Like"><a class="Like-Unlike" href="">Like</a></button>
+    <div class="counter">0</div> -->
+    <span class="likes">
+        <button class="button">👍</button>
+        <div class="counter">0</div>
+    </span>
 
     <div id="guide">
         <h1> Use keyboard to play</h1>
         <p id="whiteNotes"><span class="keyboard"> A S D F G H J K </span> for white notes</p>
         <p><span class="keyboard"> W E Y U I </span> for black notes</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="module" src="/jquery.min.js"></script>
     <script type="module" src="/howler.min.js"></script>
     <script type="module" src="/script.js"></script>
+
 </body>
 
 </html>
