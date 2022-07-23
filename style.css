@@ -91,10 +91,24 @@ body {
 .counter {
     font-size: 40px;
 }
-
-#Notation {
+#Song{
     display: flex;
-    width: 100%;
+left: 0px;
+position: fixed;
+width:20%;
+height: 60%;
+font-size: 20px;
+
+}
+#Notation{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  
+}
+
+#Notation div:nth-child(2n){
+color:white;
 }
 
 #btn {
@@ -102,4 +116,3 @@ body {
     border: 1px solid #333;
     border-radius: 10px;
 }
-

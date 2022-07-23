@@ -72,7 +72,7 @@ const btn = document.querySelector('#btn');
 const output = document.querySelector('#Notation');
 const url = 'db.json';
 btn.onclick = () => {
-
+output.innerHTML = 'connecting....'
     getData();
 
 }
@@ -81,7 +81,7 @@ function getData() {
     fetch(url)
         .then(rep => rep.json())
         .then(data => {
-            console.log(data.SongNotation);
+            outData(data.SongNotation);
         })
 }
 
@@ -90,9 +90,16 @@ function outData(val) {
     let html = ' ';
     val.forEach((ele, ind) => {
         console.log(ele);
-        html += `<div></div>`;
+        html += `<div>${ind+1}. ${ele.Song}</div>`;
     })
 
     output.innerHTML = html;
 
 }
+
+// fetch('db.json')
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data.SongNotation)
+//         document.querySelector('#Notation').innerText = JSON.stringify(data)
+//     })
